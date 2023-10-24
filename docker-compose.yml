@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  app:
+    build: ./
+    image: vue-app 
+    ports:
+      - 80:50000
+    restart: unless-stopped

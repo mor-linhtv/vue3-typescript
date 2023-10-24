@@ -1,0 +1,16 @@
+$mobile: 767px;
+$tablet: 768px;
+$medium-desktop: 1279px;
+$large-desktop: 1440px;
+
+@mixin mediaMaxWidth($breakpoints) {
+               @media only screen and (max-width: $breakpoints) {
+                              @content;
+               }
+}
+
+@mixin mediaMinWidth($breakpoints) {
+               @media only screen and (min-width: $breakpoints) {
+                              @content;
+               }
+}
